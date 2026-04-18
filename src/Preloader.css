@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Nosifer&display=swap');
+
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 1px); }
+    40% { transform: translate(2px, -1px); }
+    60% { transform: translate(-1px, 2px); }
+    80% { transform: translate(1px, -2px); }
+    100% { transform: translate(0); }
+}
+  
+.glitch {
+    animation: glitch 0.15s infinite;
+}
+
+#count {
+    color: brown;
+    font-family: "Nosifer", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 400px;
+}
+
+@media(max-width: 960px) {
+    #count {
+        font-size: 115px;
+    }
+}
