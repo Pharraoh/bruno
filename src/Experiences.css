@@ -1,0 +1,68 @@
+body {
+    overflow-x: hidden;
+}
+
+.paper-clip {
+    margin-bottom: -34px;
+    position: relative;
+    z-index: 10;
+    display: inline-block;
+    transform: rotate(4deg);
+}
+
+/* Tape strip across top */
+.tape1 {
+    position: absolute;
+    top: 1120px;
+    left: 31%;
+    transform: translateX(-50%) rotate(-20deg);
+    width: 90px;
+    height: 22px;
+    background-color: rgba(220,210,180,0.55);
+    border: 1px solid rgba(200,190,160,0.4);
+    border-radius: 2px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.tape2 {
+    position: absolute;
+    top: 1120px;
+    right: 26%;
+    transform: translateX(-50%) rotate(-120deg);
+    width: 90px;
+    height: 22px;
+    background-color: rgba(220,210,180,0.55);
+    border: 1px solid rgba(200,190,160,0.4);
+    border-radius: 2px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+@media(max-width: 1400px) {
+    .tape1 {
+        position: absolute;
+        top: 111vh;
+        left: 22%;
+    }
+
+    .tape2 {
+        position: absolute;
+        top: 112vh;
+        left: 79%;
+    }
+}
+
+@media(max-width: 700px) {
+    .tape1 {
+        position: absolute;
+        top: 118vh;
+        left: 10%;
+    }
+
+    .tape2 {
+        position: absolute;
+        top: 118vh;
+        left: 90%;
+    }
+}

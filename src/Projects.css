@@ -1,0 +1,117 @@
+/* CTA */
+/* .spill-btn {
+    margin-top: 50px;
+    padding: 12px 28px;
+  
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.2);
+  
+    color: white;
+  
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2em;
+  
+    cursor: pointer;
+  }
+  
+  .spill-btn:hover {
+    border-color: hsl(338,100%,55%);
+    color: hsl(338,100%,55%);
+  } */
+
+  .archive-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+
+  .spill-btn {
+    padding: 12px 26px;
+  
+    background: hsl(0, 0%, 92%);
+    color: hsl(0, 0%, 8%);
+  
+    border: none;
+  
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.25em;
+  
+    cursor: pointer;
+  
+    position: relative;
+  
+    transform: rotate(-1.5deg);
+  
+    box-shadow: 
+      0 10px 0 rgba(0,0,0,0.2),
+      0 25px 40px rgba(0,0,0,0.4);
+  
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .spill-btn:hover {
+    transform: rotate(1deg) scale(1.03);
+    color: hsl(338,100%,55%);
+  }
+
+  .button-glitch-line {
+    width: 140px;
+    height: 10px;
+  
+    margin-top: 8px;
+  
+    background: repeating-linear-gradient(
+      90deg,
+      hsl(338,100%,55%),
+      hsl(338,100%,55%) 6px,
+      transparent 6px,
+      transparent 12px
+    );
+  
+    transform: rotate(-2deg);
+  
+    opacity: 0.8;
+  }
+
+  .lightning-scribble {
+    position: absolute;
+    top: -30px;
+  
+    width: 80px;
+    height: 40px;
+  
+    background: transparent;
+  
+    border-left: 2px solid hsl(338,100%,55%);
+    border-bottom: 2px solid hsl(338,100%,55%);
+  
+    transform: rotate(-20deg) skewX(-10deg);
+  
+    opacity: 0.9;
+  }
+  
+  /* animated flicker */
+  .lightning-scribble::after {
+    content: "";
+    position: absolute;
+  
+    width: 60px;
+    height: 2px;
+  
+    background: hsl(338,100%,55%);
+  
+    top: 10px;
+    left: -10px;
+  
+    transform: rotate(30deg);
+  
+    opacity: 0.7;
+    animation: flicker 1.5s infinite ease-in-out;
+  }
+
+  @keyframes flicker {
+    0%, 100% { opacity: 0.2; transform: translateX(0); }
+    50% { opacity: 1; transform: translateX(3px); }
+  }

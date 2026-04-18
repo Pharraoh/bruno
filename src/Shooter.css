@@ -1,0 +1,107 @@
+.contact-section {
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .contact-button {
+    padding: 14px 30px;
+  
+    background: #f5f5f5;
+    color: #111;
+  
+    font-family: "Bebas Neue", sans-serif;
+    letter-spacing: 0.2em;
+  
+    cursor: pointer;
+  
+    position: relative;
+  
+    transform: rotate(-2deg);
+  
+    box-shadow: 
+      0 10px 0 rgba(0,0,0,0.2),
+      0 25px 40px rgba(0,0,0,0.4);
+  
+    transition: transform 0.2s ease;
+}
+
+.contact-button.impact {
+    animation: shake 0.3s ease;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(0,0) rotate(-2deg); }
+    25% { transform: translate(-4px,2px) rotate(-3deg); }
+    50% { transform: translate(4px,-2px) rotate(-1deg); }
+    75% { transform: translate(-2px,2px) rotate(-2deg); }
+    100% { transform: translate(0,0) rotate(-2deg); }
+}
+
+.crack-line {
+    position: absolute;
+    top: 50%;
+    left: 0;
+  
+    width: 0%;
+    height: 2px;
+  
+    background: hsl(338,100%,55%);
+  
+    transform: rotate(-10deg);
+  
+    transition: width 0.3s ease;
+  }
+  
+  .contact-button.impact .crack-line {
+    width: 100%;
+  }
+
+  .contact-reveal {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+    animation: popIn 0.4s ease forwards;
+  }
+  
+  @keyframes popIn {
+    from {
+      opacity: 0;
+      transform: scale(0.8) rotate(-5deg);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  .contact-card {
+    padding: 12px 20px;
+  
+    background: #f5f5f5;
+    color: #111;
+  
+    font-family: "Bebas Neue", sans-serif;
+  
+    transform: rotate(var(--rot));
+    cursor: pointer;
+  
+    box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  
+    transition: transform 0.2s ease;
+  }
+  
+  /* random rotations */
+  .contact-card:nth-child(1) { --rot: -6deg; }
+  .contact-card:nth-child(2) { --rot: 4deg; }
+  .contact-card:nth-child(3) { --rot: -3deg; }
+  .contact-card:nth-child(4) { --rot: 5deg; }
+  
+  .contact-card:hover {
+    transform: scale(1.1) rotate(0deg);
+    color: hsl(338,100%,55%);
+  }
