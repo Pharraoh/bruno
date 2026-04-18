@@ -4,7 +4,7 @@ export const PROJECTS = [
       title: "Marketplace Hub",
       desc: "Real-time marketplace with chat, listings, and user dashboard.",
       tags: ["REACT", "DJANGO", "CHAT"],
-      image: "../src/assets/megan.png",
+      image: "/megan.png",
       link: "https://github.com/Pharraoh/chippies",
     },
     {
@@ -12,7 +12,7 @@ export const PROJECTS = [
       title: "Dating App",
       desc: "User matching system with real-time messaging and statuses.",
       tags: ["FULLSTACK", "AJAX", "REALTIME"],
-      image: "../src/assets/openc.png",
+      image: "/openc.png",
       link: "https://github.com/Pharraoh/Ice",
     },
     {
@@ -20,7 +20,7 @@ export const PROJECTS = [
       title: "FoodSnap AI",
       desc: "AI-powered image-to-recipe generator (final year project).",
       tags: ["AI", "PYTHON", "ML"],
-      image: "../src/assets/mohamed.png",
+      image: "/mohamed.png",
       link: "https://github.com/Pharraoh/foodsnap",
     },
   ];
